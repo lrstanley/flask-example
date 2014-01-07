@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import flask
+import flask, os
 
 app = flask.Flask(__name__)
 
@@ -29,5 +29,5 @@ def add_header(response):
     return response
 
 # Debug should normally be false, so we don't display hazardous information!
-app.debug = False # Set it to true, to show awesome debugging information!
-app.run(host='0.0.0.0', port=5000)
+app.debug = True # Set it to true, to show awesome debugging information!
+app.run(host='0.0.0.0', port=4000)
